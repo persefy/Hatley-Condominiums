@@ -3,30 +3,41 @@ Fictional condominiums complex information website listing available units, styl
 
 ## Description: 
 Condominiums complex information website listing available units, style of units, and contact information
+
 ## ERD 
-![image](https://github.com/persefy/condo-project/assets/17712788/b84ef012-e932-4028-842d-fe7792c29fdf)
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/7cb8a028-7573-4417-b69a-9b4db5ccb786)
 
-
-## Front-End Wireframe:
-![image](https://github.com/persefy/condo-project/assets/17712788/39be8c50-dd17-45da-ab33-2c498dae4f52)
-![image](https://github.com/persefy/condo-project/assets/17712788/cddd1829-9a1f-4cdb-afc3-5f59c22080af)
-![image](https://github.com/persefy/condo-project/assets/17712788/f19a7f69-eb54-43ae-9f8c-86e6049dcf95)
-![image](https://github.com/persefy/condo-project/assets/17712788/8fca70cb-1125-4ebd-82e3-4b71d13ad1ed)
-![image](https://github.com/persefy/condo-project/assets/17712788/84112253-fbfd-4ae9-9884-b80633632dff)
-
-
+## Front End Wireframes
+### Index 
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/893f4672-31b3-4469-9e67-97a154f1ff66)
+### About 
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/572c0d15-94ad-4a5e-9b92-5e933b7b26e8)
+### Available Units 
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/82ba21be-4d86-47e1-8969-cec43700a84e)
+### Unit Styles 
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/ab070d7f-80a8-4f3a-83ef-dc8e385f3df4)
+### Contact
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/f040aaa8-ace9-4d6c-8f1b-69840f2974af)
 
 ## User Stories
-### MVP:
-- Entities: Condo Reps, Condo Units, Condo Styles
-- CRUD in backend for condo reps, condo units, condo styles 
-- Navigation bar at the top of all the pages
-- Pages: About, Units Available, Styles, Contact
-- **Units Available page** will be filtered to show only units marked as available and have sorting by: **rent**, **square footage**, **bed**, **baths**, **location**, **parking**, **acceptsPets**
-- **Unit Styles** page will have list the unit styles and have **sorting** by **space score** (1,2, or 3, with 3 having the most space)
-- The **About** page will display location specific features based on selection of **location**
+#### MVP:
+
+1. As a data admin, I want to be able to track data on the Condo Reps, Condo Units, Condo Styles
+  - Entities: Condo Reps, Condo Units, Condo Styles
+2. As a data admin, I want to be able to create, read, update, and delete data for all of the entities that I'm tracking.
+  - CRUD in backend for condo reps, condo units, condo styles
+3. As an end user, I want access to navigation buttons at the top of screen to help me navigate to all the pages in the website.
+  - Navigation bar at the top of all the pages: 'About', 'Units Available', 'Unit Styles', 'Contact'
+4. As an end user, I want to access the information for the condominium complex in a way that the information is easy to access and organized intuitively.
+  - Pages: About, Units Available, Styles, Contact
+5. As an end user, I want to be able to view and sort through a list of all available condo units.
+  - **Units Available page** will be filtered to show only units marked as available and have sorting by: **rent**, **square footage**, **bed**, **baths**,    **location**, **parking**, **acceptsPets**
+6. As an end user, I want to be able to view and sort through the unit styles offered in the condo complex.
+  - **Unit Styles** page will have list the unit styles and have **sorting** by **space score** (1,2, or 3, with 3 having the most space)
+7. As an end user, I want to be able to learn more about the condo complex and amenities.
+  - The **About** page will display location specific features based on selection of **location**
   
-### Stretch Goals:
+#### Stretch Goals:
 - Add sorting to **Units Available** page by **rep**, and **style**
 - Add form to **Contact** page that displays correct contact rep based on either **unit number** or **bedroom count**
 - Add full page for each unit available
