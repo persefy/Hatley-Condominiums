@@ -1,8 +1,6 @@
 # Hatley-Condominiums
-Fictional condominiums complex information website listing available units, style of units, and contact information
-
 ## Description: 
-Condominiums complex information website listing available units, style of units, and contact information
+Fictional condominiums complex information website listing available units, style of units, and contact information
 
 ## ERD 
 ![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/7cb8a028-7573-4417-b69a-9b4db5ccb786)
