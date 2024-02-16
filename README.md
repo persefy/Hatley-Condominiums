@@ -30,7 +30,7 @@ Condominiums complex information website listing available units, style of units
   - Navigation bar at the top of all the pages: 'About', 'Units Available', 'Unit Styles', 'Contact'
 4. As an end user, I want to access the information for the condominium complex in a way that the information is easy to access and organized intuitively.
   - Pages: About, Units Available, Styles, Contact
-5. As an end user, I want to be able to view and sort through a list of all available condo units.
+5. As an end user, I want to be able to view and sort through a list of all available condo units based on my criteria.
   - **Units Available page** will be filtered to show only units marked as available and have sorting by: **rent**, **square footage**, **bed**, **baths**,    **location**, **parking**, **acceptsPets**
 6. As an end user, I want to be able to view and sort through the unit styles offered in the condo complex.
   - **Unit Styles** page will have list the unit styles and have **sorting** by **space score** (1,2, or 3, with 3 having the most space)
@@ -38,7 +38,11 @@ Condominiums complex information website listing available units, style of units
   - The **About** page will display location specific features based on selection of **location**
   
 #### Stretch Goals:
-- Add sorting to **Units Available** page by **rep**, and **style**
-- Add form to **Contact** page that displays correct contact rep based on either **unit number** or **bedroom count**
-- Add full page for each unit available
-- custom images for styles
+8. As an end user, I want additional filters by which I can further narrow down the units available listings to help me identify the units that meet my criteria.
+  - Add sorting to **Units Available** page by **rep**, and **style**
+9. As an end user, I want to easily find the correct representative contact information by filtering based on known unit number of unit features.
+  - Add form to **Contact** page that displays correct contact rep based on either **unit number** or **bedroom count**
+10. As an end user, I want to be able to see a dedicated page for each unit that I select from the **Available Units** page or from the **Contact** page.
+  - Add full page for each unit available
+11. As an end user, I want to see high quality floor plans for each unit style.
+  - custom images for styles
