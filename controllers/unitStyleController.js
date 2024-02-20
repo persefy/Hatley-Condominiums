@@ -61,9 +61,9 @@ const deleteUnitStyle = async (req, res) => {
 }
 
 module.exports = {
-    getAllUnitRep,
-    getUnitRepById,
-    createUnitRep,
-    updateUnitRep,
-    deleteUnitRep
+    getAllUnitStyle,
+    getUnitStyleById,
+    createUnitStyle,
+    updateUnitStyle,
+    deleteUnitStyle
 }
