@@ -9,7 +9,6 @@ const getAllUnitRep = async (req,res) => {
     }
 }
 
-
 const getUnitRepById = async (req, res) => {
     try {
         const { id } = req.params;
