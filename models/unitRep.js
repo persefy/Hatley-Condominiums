@@ -8,7 +8,9 @@ const UnitRep = new Schema(
         repPhone: {type: String,  required: true },
         officeAddress: {type: String},
         officeHours: {type: String},
-        officeDays: {type: String}
+        officeDays: {type: String},
+        unitRepImg: {type: String, required: true},
+        unitRepSlogan: {type:String}
     },
     { timestamps: true }
 )
