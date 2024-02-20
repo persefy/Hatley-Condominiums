@@ -2,7 +2,9 @@
 ## Description: 
 Fictional condominiums complex information website listing available units, style of units, and contact information
 
-## ERD ![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/c58e4365-b97b-4b46-9b7b-c681bec560ec)
+## ERD
+![image](https://github.com/persefy/Hatley-Condominiums/assets/17712788/baf6771d-9f91-454f-9376-cafac1f9011b)
+
 
 ## Front End Wireframes
 ### Index 
@@ -28,9 +30,9 @@ Fictional condominiums complex information website listing available units, styl
 4. As an end user, I want to access the information for the condominium complex in a way that the information is easy to access and organized intuitively.
   - Pages: About, Units Available, Styles, Contact
 5. As an end user, I want to be able to view and sort through a list of all available condo units based on my criteria.
-  - **Units Available page** will be filtered to show only units marked as available and have sorting by: **rent**, **square footage**, **bed**, **baths**,    **location**, **parking**, **acceptsPets**
+  - **Units Available page** will be filtered to show only units marked as available and have sorting by: **rent**, **square footage**, **beds**, **baths**, **location**, **parking**, **acceptsPets**
 6. As an end user, I want to be able to view and sort through the unit styles offered in the condo complex.
-  - **Unit Styles** page will have list the unit styles and have **sorting** by **space score** (1,2, or 3, with 3 having the most space)
+  - **Unit Styles** page will have list the unit styles and have **sorting** by **space score** (1, 2, 3, or 4 with 4 having the most square footage/amenities)
 7. As an end user, I want to be able to learn more about the condo complex and amenities.
   - The **About** page will display location specific features based on selection of **location**
   
