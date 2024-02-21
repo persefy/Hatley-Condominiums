@@ -16,7 +16,7 @@ const main = async () => {
       officeHours: 'By Appointment Only',
       officeDays: 'M - F',
       unitRepImg: 'urlHere.com',
-      unitRepSlogan: ''
+      unitRepSlogan: "Let's get you situated."
     },
     {
       name: 'Emilie Lark',
@@ -26,7 +26,7 @@ const main = async () => {
       officeHours: '9am-12pm',
       officeDays: 'M, W',
       unitRepImg: 'urlHere.com',
-      unitRepSlogan: ''
+      unitRepSlogan: 'Your dream community awaits.'
     },
     {
       name: 'Teddy Jones',
@@ -36,7 +36,7 @@ const main = async () => {
       officeHours: '10am-12pm, 1pm-3pm',
       officeDays: 'M, T, W',
       unitRepImg: 'urlHere.com',
-      unitRepSlogan: ''
+      unitRepSlogan: 'Home is where life is. Choose Hatley.'
     },
     {
       name: 'Lara Gomez',
@@ -46,7 +46,7 @@ const main = async () => {
       officeHours: '8am-3pm, by Appointment',
       officeDays: 'M - F',
       unitRepImg: 'urlHere.com',
-      unitRepSlogan: ''
+      unitRepSlogan: "I'll help you find your dream home."
     }
   ]
   await UnitRep.insertMany(unitReps)

@@ -5,10 +5,10 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
   //unit styles -- update names once styles are named!
-  const unitStyle1 = await UnitStyle.find({name: 'Unit Style 1'})
-  const unitStyle2 = await UnitStyle.find({name: 'Unit Style 2'})
-  const unitStyle3 = await UnitStyle.find({name: 'Unit Style 3'})
-  const unitStyle4 = await UnitStyle.find({name: 'Unit Style 4'})
+  const bensyCottage = await UnitStyle.find({name: 'Bensy Cottage'})
+  const tammyHome = await UnitStyle.find({name: 'Tammy Home'})
+  const georgieFlair = await UnitStyle.find({name: 'Georgie Flair'})
+  const dorseyVilla = await UnitStyle.find({name: 'Dorsey Villa'})
 
   //unit reps
   const robertPence = await UnitRep.find({name: 'Robert Pence'})

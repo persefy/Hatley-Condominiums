@@ -6,7 +6,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const unitStyles = [
     {
-      name: '',
+      name: 'Bensy Cottage',
       sqFtMin: 950,
       sqFtMax: 1100,
       bedMin: 2,
@@ -18,7 +18,7 @@ const main = async () => {
       unitStyleImg: 'styleUrlHere.com'
     },
     {
-      name: '',
+      name: 'Tammy Home',
       sqFtMin: 1050,
       sqFtMax: 2200,
       bedMin: 2,
@@ -30,7 +30,7 @@ const main = async () => {
       unitStyleImg: 'styleUrlHere.com'
     },
     {
-      name: '',
+      name: 'Georgie Flair',
       sqFtMin: 2500,
       sqFtMax: 2800,
       bedMin: 3,
@@ -42,7 +42,7 @@ const main = async () => {
       unitStyleImg: 'styleUrlHere.com'
     },
     {
-      name: '',
+      name: 'Dorsey Villa',
       sqFtMin: 3000,
       sqFtMax: 4500,
       bedMin: 4,
