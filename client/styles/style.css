@@ -69,6 +69,63 @@ h1 a {
     border-radius: 3px;
 
 }
+/* Available Units Page */
+.unitDisplay {
+    border: solid 1px #ddd;
+    margin: 5px 0;
+}
+#unitSort, #unitFilter {
+    background-color: #fff;
+    border:solid 1px #6390f3;
+    color: #6390f3;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100px;
+    margin: 5px 10px;
+}
+#unitSort img {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    margin-right: 5px;
+}
+#unitFilter img {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    margin-right: 5px;
+
+}
+#unitSorting {
+    padding: 0;
+}
+#unitSorting li {
+    list-style: none;
+}
+/* Unit list items */
+.unitDisplay {
+    position: relative;
+}
+.petTag {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 5px;
+    border: solid 1px #eee;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #e5d688;
+    opacity: .75;
+    color: #343a47;
+
+}
+.unitInfo, .unitImg {
+    border: solid 1px #eee;
+    min-height: 150px;
+}
+.unitImg {
+    
+}
 /* Footer */
 footer {
     background-color: #eee;
