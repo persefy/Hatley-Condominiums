@@ -13,7 +13,7 @@ const main = async () => {
       bedMax: 2,
       bathMin: 1,
       bathMax: 2,
-      amenityOptions: ['x','y','z'],
+      amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','keyless entry', 'private patio', 'one-floor'],
       spaceScore: 1,
       unitStyleImg: 'styleUrlHere.com'
     },
@@ -25,7 +25,7 @@ const main = async () => {
       bedMax: 4,
       bathMin: 2,
       bathMax: 3,
-      amenityOptions: ['x','y','z'],
+      amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','private balcony', 'keyless entry', 'private patio', '12 ft ceiling','two-floor'],
       spaceScore: 2,
       unitStyleImg: 'styleUrlHere.com'
     },
@@ -37,7 +37,7 @@ const main = async () => {
       bedMax: 4,
       bathMin: 2.5,
       bathMax: 4,
-      amenityOptions: ['x','y','z'],
+      amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','two private balconies', 'keyless entry', 'private patio', '12 ft ceiling','two-floor', 'terrace'],
       spaceScore: 3,
       unitStyleImg: 'styleUrlHere.com'
     },
@@ -49,7 +49,7 @@ const main = async () => {
       bedMax: 5,
       bathMin: 3,
       bathMax: 5,
-      amenityOptions: ['x','y','z'],
+      amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','two private balconies', 'keyless entry', 'private patio', '12 ft ceiling','two-floor', 'terrace', '9 ft front door', 'attached garage', 'large windows'],
       spaceScore: 4,
       unitStyleImg: 'styleUrlHere.com'
     },

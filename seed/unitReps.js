@@ -5,9 +5,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
   const unitReps = [
-
-    //add slogans!
-    
     {
       name: 'Robert Pence',
       owner: false,
