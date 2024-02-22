@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hatley Condominiums</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script delay src="js/script.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1>Hatley Condominiums</h1>
+        <h1><a href="./index.html">Hatley Condominiums</a></h1>
         <nav>
-            <ul>
+            <div id="navBtn"><img src="./assets/navBtn.png" alt="menu button"/></div>
+            <ul id="navBar">
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/units.html">Units for Rent</a></li>
                 <li><a href="pages/floor-plans.html">Floor Plans</a></li>
@@ -20,9 +21,69 @@
         </nav>
     </header>
     <main>
-        <h2>Welcome to Hatley Condominiums</h2>
-        <p>Hatley Condominiums is a luxurious residential complex nestled in the heart of Pinn City. Situated on 10 acres of meticulously landscaped grounds, this community offers impeccably maintained units for residents seeking an oasis of greenery amidst urban living.</p>
+        <div id="mainSection">
+            <section>
+                <div id="indexTopBgImg"><img src="" alt="Hatley Condo background"/></div>
+                <h2>Welcome to Hatley Condominiums</h2>
+                <p>Hatley Condominiums is a luxurious residential complex nestled in the heart of Pinn City. Situated on 10 acres of meticulously landscaped grounds, this community offers impeccably maintained units for residents seeking an oasis of greenery amidst urban living.</p>
+            </section>
+            <section>
+                <h3>Resident Amenities at Hatley</h3>
+                <section class="indexAmenities">
+                    <h4>10 Private Acres</h4>
+                    <div>
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/2023/03/robert-thiemann-wr_WGW25YVQ-unsplash.webp"/>
+                    </div>
+                    <div>
+                        <p>Description of 10 private acres</p>
+                    </div>
+                </section>
+                <section class="indexAmenities">
+                    <h4>Walkable Community</h4>
+                    <div>
+                        <img src="https://www.gaithersburgmd.gov/home/showpublishedimage/3676/636975902007830000"/>
+                    </div>
+                    <div>
+                        <p>Description of 2 parks connected by track.</p>
+                    </div>
+                </section>
+                <section class="indexAmenities">
+                    <h4>Outdoor Lap Pool</h4>
+                    <div>
+                        <img src="https://www.falconpools.co.uk/wp-content/uploads/2023/05/luxury-indoor-pools-0672-1536x955-c-default.jpg"/>
+                    </div>
+                    <div>
+                        <p>50 ft long pool, 30 ft wide with shallow 2 ft edge to allow both exercise and play for the whole family.</p>
+                    </div>
+                </section>
+                <section class="indexAmenities">
+                    <h4>Community House</h4>
+                    <div>
+                        <img src="https://kimmel-bogrette.com/wp-content/uploads/2016/04/haverford_rec_ext_4a-1467x1050.jpg"/>
+                    </div>
+                    <div>
+                        <p>Feauturing a dedicated work kitchen, ballroom space, a shared workspace, and two private offices available for reservation.</p>
+                    </div>
+                </section>
+                <aside class="callToActionSec">
+                    <p>Want to know more about the Hatley Condominiums community?</p>
+                    <a href="./pages/about.html" class="btnStyling">Learn more</a>
+                </aside>
+                <aside class="callToActionSec">
+                    <p>See our list of available units</p>
+                    <a href="./pages/units.html" class="btnStyling">See Units</a>
+                </aside>
+                <aside class="callToActionSec">
+                    <p>Contact a representative to get started</p>
+                    <a href="./pages/contact.html" class="btnStyling">Get Started</a>
+                </aside>
+                
+            </section>
+        </div>
     </main>
-    
+    <footer>
+        <p id="copyRef">&copy; 2024 <span>Designed and Developed by <a href="https://github.com/persefy">Stephanie Cancel</a></span></p>
+    </footer>
+    <script delay src="js/script.js"></script>
 </body>
 </html>

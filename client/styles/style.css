@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+h1 {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 2.1rem;
+}
+h1 a {
+    text-decoration: none;
+}
+/* Nav bar styling */
+#navBar {
+    padding:0;
+    /* display: none; */
+}
+#navBar li {
+    list-style: none;
+    border: solid 1px #fff;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+#navBar li a {
+    text-decoration: none;
+}
+#navBtn, #navBtn img{
+    width: 35px;
+}
+/* All Pages */
+#mainSection {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Index page */
+#indexTopBgImg {
+    width: 80%;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://static.wixstatic.com/media/11062b_8764c64fe1bf490490b01ea65052e01d~mv2_d_3000_2477_s_4_2.jpg/v1/fill/w_506,h_718,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8764c64fe1bf490490b01ea65052e01d~mv2_d_3000_2477_s_4_2.jpg');
+}
+.indexAmenities {
+    border: solid 1px #eee;
+    padding: 0 2px 20px;
+}
+.indexAmenities div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.indexAmenities div img {
+    width: 100%;
+    height: auto;
+}
+.callToActionSec {
+    border: solid 1px #eee;
+    padding: 10px 2px 20px;
+    margin: 5px 0;
+    box-shadow: 5px 5px 5px #eee;
+}
+.callToActionSec a {
+    text-decoration: none;
+    background-color: coral;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    width: 50%;
+    border-radius: 3px;
+
+}
+/* Footer */
+footer {
+    background-color: #eee;
+    min-height: 30px;
+}
+#copyRef {
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (min-width: 400px) {
+    /* Nav bar styling */
+    #navBar {
+        display: flex;
+        justify-content: space-around;
+    }
+    #navBar li {
+        border-radius: 3px;
+    }
+    #navBtn img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        margin-bottom: 50px;
+        font-size: 2.5rem;
+    }
+    #navBar {
+        max-width: 700px;
+        margin: 0 auto 20px;
+    }
+    #navBar li {
+        width: 100px;
+    }
+    #mainSection {
+        max-width: 1000px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .indexAmenities div {
+        
+    }
+}
