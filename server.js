@@ -45,3 +45,8 @@ app.get('/unitStyle/:id', unitStyleController.getUnitStyleById)
 app.post('/unitStyle', unitStyleController.createUnitStyle)
 app.put('/unitStyle/:id',unitStyleController.updateUnitStyle)
 app.delete('/unitStyle/:id',unitStyleController.deleteUnitStyle)
+
+//catch error routes
+app.get('*', (req, res) => {
+    res.send('404 Not Found')
+  })

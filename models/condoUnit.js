@@ -13,10 +13,10 @@ const CondoUnit = new Schema(
         sqFt: {type: Number, required: true },
         beds: {type: Number, required: true },
         baths: {type: Number, required: true },
-        utilitiesAvailable: {type: String, required: true },
+        utilitiesAvailable: {type: Array, required: true },
         parkingSpaces: {type: Number, required: true },
         location: {type: String, required: true },
-        description: {type: String, required: true },
+        description: {type: String },
         acceptsPets: {type: Boolean, required: true },
         petRent: {type: Number },
         petPolicy: {type: String }

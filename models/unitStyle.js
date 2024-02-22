@@ -10,7 +10,7 @@ const UnitStyle = new Schema(
         bedMax: {type: Number, required: true },
         bathMin: {type: Number, required: true },
         bathMax: {type: Number, required: true },
-        amenityOptions: {type: String, required: true},
+        amenityOptions: {type: Array, required: true},
         spaceScore: {type: Number, required: true },
         unitStyleImg: {type: String, required: true}
     },
