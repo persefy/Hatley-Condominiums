@@ -181,11 +181,11 @@ h1 a {
     text-align: left;
     padding: 0 10px;
 }
-.unitImg {
+.unitImg, .imgHolder{
     width: 100%;
     position: relative;
 }
-.unitImg img {
+.unitImg img, .imgHolder img {
     width: 100%;
 }
 /* Styling of Unit Info */
@@ -210,6 +210,11 @@ h1 a {
     display: inline-block;
     padding: 12px 7px;
     margin: 5px;
+}
+/* Unit Styles */
+.listItem .imgHolder.rep {
+    display: flex;
+    align-items: center;
 }
 /* Footer */
 footer {
@@ -269,6 +274,13 @@ footer {
     .aboutListImg {
         width: 50%;
     }
+    .listItem {
+        display: flex;
+        align-items: center;
+    }
+    .listItem:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -304,6 +316,25 @@ footer {
     .indexAmenities p {
         padding: 5px 2px 0 10px;
         text-align: left;
+    }
+    .listItem {
+        display: flex;
+        align-items: center;
+        box-shadow: 5px 5px 10px #ddd;
+        margin: 5px 0;
+    }
+    .listItem .imgHolder{
+        max-width: 200px;
+        padding: 20px;
+    }
+    .listItem .imgHolder img {
+        width: 100%;
+    }
+    .listItem .name, .listItem .phone {
+        padding: 2px 10px;
+    }
+    .listItem:nth-child(even) {
+        flex-direction: row-reverse;
     }
 }
 @media screen and (min-width: 700px) {

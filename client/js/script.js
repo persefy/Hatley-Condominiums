@@ -12,7 +12,29 @@ const sortByBaths = document.querySelector('#sortByBaths');
 const sortByParkingCount = document.querySelector('#sortByParkingCount');
 const sortByPetsYesNo = document.querySelector('#sortByYesNo');
 
+const bensyCottageName = document.querySelector('#bensyCottage .name');
+const bensyCottageImg = document.querySelector('#bensyCottage img');
 
+const tammyHomeName = document.querySelector('#tammyHome .name');
+const tammyHomeImg = document.querySelector('#tammyHome img');
+
+const georgieFlairName = document.querySelector('#georgieFlair .name');
+const georgieFlairImg = document.querySelector('#georgieFlair img');
+
+const dorseyVillaName = document.querySelector('#dorseyVilla .name');
+const dorseyVillaImg = document.querySelector('#dorseyVilla img');
+
+const robertPenceName = document.querySelector('#robertPence.infoHolder .name');
+const robertPencePhone = document.querySelector('#robertPence.infoHolder .phone');
+
+const emilieLarkName = document.querySelector('#emilieLark.infoHolder .name');
+const emilieLarkPhone = document.querySelector('#emilieLark.infoHolder .phone');
+
+const teddyJonesName = document.querySelector('#teddyJones.infoHolder .name');
+const teddyJonesPhone = document.querySelector('#teddyJones.infoHolder .phone');
+
+const laraGomezName = document.querySelector('#laraGomez.infoHolder .name');
+const laraGomezPhone = document.querySelector('#laraGomez.infoHolder .phone');
 
 
 
@@ -147,8 +169,77 @@ const populateUnits = async () => {
     } 
 }
 
-//document.body.onload = populateUnits;
+
+const populateUnitStyles = async () => {
+    //pull dynamic data
+    let response = await axios.get(`http://localhost:3001/unitStyle`);
+    console.log(response.data[0].name)
+
+    //Bensy Cottage
+    let unitStyle0Name = response.data[0].name;
+    let unitStyle0ImgUrl = response.data[0].unitStyleImg;
+
+    //Tammy Home
+    let unitStyle1Name = response.data[1].name;
+    let unitStyle1ImgUrl = response.data[1].unitStyleImg;
+
+    //Georgie Flair
+    let unitStyle2Name = response.data[2].name;
+    let unitStyle2ImgUrl = response.data[2].unitStyleImg;
+
+    //Dorsey Villa
+    let unitStyle3Name = response.data[3].name;
+    let unitStyle3ImgUrl = response.data[3].unitStyleImg;
+
+    //add dynamic data
+    bensyCottageName.innerHTML = `${unitStyle0Name}`
+    bensyCottageImg.setAttribute('src', `${unitStyle0ImgUrl}`);
+
+    tammyHomeName.innerHTML = `${unitStyle1Name}`
+    tammyHomeImg.setAttribute('src', `${unitStyle1ImgUrl}`);
+
+    georgieFlairName.innerHTML = `${unitStyle2Name}`
+    georgieFlairImg.setAttribute('src', `${unitStyle2ImgUrl}`);
+
+    dorseyVillaName.innerHTML = `${unitStyle3Name}`
+    dorseyVillaImg.setAttribute('src', `${unitStyle3ImgUrl}`);
+
+}
+
+const populateUnitReps = async () => {
+    //pull dynamic data
+    let response = await axios.get(`http://localhost:3001/unitRep`);
+    console.log(response.data[0].name)
+
+    let rep0Name = response.data[0].name;
+    let rep0Phone = response.data[0].repPhone;
+
+    let rep1Name = response.data[1].name;
+    let rep1Phone = response.data[1].repPhone;
+
+    let rep2Name = response.data[2].name;
+    let rep2Phone = response.data[2].repPhone;
+
+    let rep3Name = response.data[3].name;
+    let rep3Phone = response.data[3].repPhone;
+
+    robertPenceName.innerHTML = `${rep0Name}`;
+    robertPencePhone.append(rep0Phone)
+
+    emilieLarkName.innerHTML = `${rep1Name}`;
+    emilieLarkPhone.append(rep1Phone)
+
+    teddyJonesName.innerHTML = `${rep2Name}`;
+    teddyJonesPhone.append(rep2Phone)
+
+    laraGomezName.innerHTML = `${rep3Name}`;
+    laraGomezPhone.append(rep3Phone)
+
+}
+//run functions
 populateUnits()
+populateUnitStyles()
+populateUnitReps()
 
 //Events
 
@@ -181,11 +272,11 @@ sortBtn.addEventListener('click', () => {
     }
 });
 
-console.log(unitDisplayHolder.children)
-//sorting functions for units page
-sortByRent.addEventListener('click', () => { 
+// console.log(unitDisplayHolder.children)
+// //sorting functions for units page
+// sortByRent.addEventListener('click', () => { 
 
-});
+// });
 
 //sortBySqFt
 // sortbyBeds 

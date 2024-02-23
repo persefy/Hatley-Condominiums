@@ -15,7 +15,7 @@ const main = async () => {
       bathMax: 2,
       amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','keyless entry', 'private patio', 'one-floor'],
       spaceScore: 1,
-      unitStyleImg: 'styleUrlHere.com'
+      unitStyleImg: 'https://villageatfoxriver.com/wp-content/uploads/2-Bedroom-G-1-scaled.jpg'
     },
     {
       name: 'Tammy Home',
@@ -27,7 +27,7 @@ const main = async () => {
       bathMax: 3,
       amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','private balcony', 'keyless entry', 'private patio', '12 ft ceiling','two-floor'],
       spaceScore: 2,
-      unitStyleImg: 'styleUrlHere.com'
+      unitStyleImg: 'https://medialibrarycfo.entrata.com/15027/MLv3/4/22/2022/3/26/9776/61041c7ad796b5.17929451607.jpg'
     },
     {
       name: 'Georgie Flair',
@@ -39,7 +39,7 @@ const main = async () => {
       bathMax: 4,
       amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','two private balconies', 'keyless entry', 'private patio', '12 ft ceiling','two-floor', 'terrace'],
       spaceScore: 3,
-      unitStyleImg: 'styleUrlHere.com'
+      unitStyleImg: 'https://d5caq35prpanp.cloudfront.net/files/20667/carousel_photo/the-20sonoma-20coase-3d.jpg?1630958500'
     },
     {
       name: 'Dorsey Villa',
@@ -51,7 +51,7 @@ const main = async () => {
       bathMax: 5,
       amenityOptions: ['walk-in closet','dishwasher','sink garbage disposal', 'gas cooktop', 'convection oven', 'microwave', 'washer', 'dryer', 'heating', 'a/c unit', 'engineered hardwood flooring','electric fireplace','two private balconies', 'keyless entry', 'private patio', '12 ft ceiling','two-floor', 'terrace', '9 ft front door', 'attached garage', 'large windows'],
       spaceScore: 4,
-      unitStyleImg: 'styleUrlHere.com'
+      unitStyleImg: 'https://southduff.com/wp-content/uploads/2022/05/E1_5BED_3BATH_SouthDuff.png'
     },
   ]
 
