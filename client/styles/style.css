@@ -42,10 +42,10 @@ h1 a {
     text-align: center;
 }
 /* Index page */
-#indexTopBgImg {
-    max-width: 1000p ;
+#indexTopBgImg, #aboutTopImg {
+    max-width: 1000px ;
 }
-#indexTopBgImg img {
+#indexTopBgImg img, #aboutTopImg img {
     width: 100%;
     height: auto;
 }
@@ -68,13 +68,43 @@ h1 a {
 }
 .callToActionSec a {
     text-decoration: none;
-    background-color: #166227;
-    color: #fff;
+    background-color: #e5d688;
+    color: #000;
     display: inline-block;
     padding: 10px 0;
     width: 50%;
     border-radius: 3px;
-
+}
+#indexCTAWrap aside {
+    background-color: #faf6f6;
+}
+/* About page */
+#quote {
+    font-size: 2rem;
+    text-align: center;
+    color: #6390f3;
+}
+#quote span {
+    display: inline-block;
+    font-size: 1rem;
+}
+#locationInfoHolder {
+    text-align: center ;
+}
+#locationInfoHolder > div {
+    box-shadow: 5px 3px 10px #eee;
+    font-size: 1.15rem;
+    padding: 5px
+}
+#locationInfoHolder h4 {
+    color: #166227;
+    font-size: 1.5rem;
+}
+.aboutListImg {
+    max-width: 500px;
+}
+.aboutListImg img {
+    width: 100%;
 }
 /* Available Units Page */
 .unitDisplay {
@@ -184,7 +214,8 @@ h1 a {
 /* Footer */
 footer {
     background-color: #eee;
-    min-height: 30px;
+    min-height: 100px;
+    padding-top: 50px;
 }
 #copyRef {
     text-align: center;
@@ -230,7 +261,13 @@ footer {
     }
     #indexCTAWrap aside {
         width: 50%;
-        background-color: #e5d688;
+        margin: 0 5px;
+    }
+    #locationInfoHolder div div {
+        display: flex;
+    }
+    .aboutListImg {
+        width: 50%;
     }
 }
 
