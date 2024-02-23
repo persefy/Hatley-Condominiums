@@ -1,28 +1,35 @@
 body {
-    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-family: "PT Serif", serif;
 }
 h1 {
     text-align: center;
     margin: 50px 0 20px;
     font-size: 2.1rem;
 }
+h1 img {
+    width: 40px;
+}
 h1 a {
     text-decoration: none;
+    color: #166227;
 }
 /* Nav bar styling */
 #navBar {
     padding:0;
-    /* display: none; */
 }
 #navBar li {
     list-style: none;
     border: solid 1px #fff;
-    background-color: #eee;
-    padding: 10px;
+    background-color: #e5d688;
     text-align: center;
+
 }
 #navBar li a {
     text-decoration: none;
+    padding: 10px;
+    color:#000;
+    width: 100%;
+    display: inline-block;
 }
 #navBtn, #navBtn img{
     width: 35px;
@@ -71,9 +78,10 @@ h1 a {
 }
 /* Available Units Page */
 .unitDisplay {
-    border: solid 1px #ddd;
     margin: 5px 0;
     color: #343a47;
+    padding: 10px 3px;
+    box-shadow: 5px 4px 10px #ddd;
 }
 #unitSort, #unitFilter {
     background-color: #fff;
@@ -83,6 +91,10 @@ h1 a {
     padding: 10px;
     width: 100px;
     margin: 5px 10px;
+}
+#unitFilter {
+    display: none; 
+    /* bring back in future version */
 }
 #unitSort img {
     display: inline-block;
@@ -95,13 +107,24 @@ h1 a {
     width: 15px;
     height: 13px;
     margin-right: 5px;
-
 }
 #unitSorting {
     padding: 0;
 }
 #unitSorting li {
     list-style: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+#unitSorting li.sortEnabled::after {
+    content: '▲';
+    color: #6390f3;
+    font-size: .70rem;
+    transform: rotate(0deg);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    padding: 0 0 1px 1px;
 }
 /* Unit list items */
 .petTag {
@@ -118,11 +141,15 @@ h1 a {
 
 }
 .unitInfo, .unitImg {
-    border: solid 1px #eee;
     min-height: 150px;
 }
-.dynamicData {
-    color: red;
+.unitInfo {
+    padding: 5px 3px;
+}
+.unitInfo div {
+    margin: 5px 0;
+    text-align: left;
+    padding: 0 10px;
 }
 .unitImg {
     width: 100%;
@@ -130,6 +157,29 @@ h1 a {
 }
 .unitImg img {
     width: 100%;
+}
+/* Styling of Unit Info */
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.unitRent {
+    font-size: 1.5rem;
+}
+.unitStyleTag {
+    border: solid 1px #ddd;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px;
+}
+.btn {
+    text-decoration: none;
+    background-color:#166227;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px 7px;
+    margin: 5px;
 }
 /* Footer */
 footer {
@@ -140,17 +190,39 @@ footer {
     text-align: center;
     padding: 20px;
 }
-@media screen and (min-width: 400px) {
+#copyRef a {
+    text-decoration: none;
+    color: #6390f3;
+}
+@media screen and (min-width: 450px) {
     /* Nav bar styling */
-    #navBar {
+    #unitSort {
+        display: none;
+    }
+    #navBar, #unitSorting {
         display: flex;
         justify-content: space-around;
     }
     #navBar li {
         border-radius: 3px;
+        width: 110px;
+    }
+    #navBar li a {
+        font-size: .75rem;
+        padding: 10px 0;
     }
     #navBtn img {
         display: none;
+    }
+    #unitSorting {
+        border: solid 1px #6390f3;
+    }
+    #unitSorting li {
+        border-right: solid 1px #6390f3;
+        padding-right: 10px;
+    }
+    #unitSorting li:last-child {
+        border: none;
     }
 }
 
@@ -162,9 +234,16 @@ footer {
     #navBar {
         max-width: 700px;
         margin: 0 auto 20px;
+
     }
     #navBar li {
-        width: 100px;
+        
+        padding: 10px;
+    }
+    #navBar li a {
+        font-size: 1rem;
+        width: 100%;
+        
     }
     #mainSection {
         max-width: 1000px;
