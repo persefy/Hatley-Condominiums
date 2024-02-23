@@ -36,10 +36,6 @@ const teddyJonesPhone = document.querySelector('#teddyJones.infoHolder .phone');
 const laraGomezName = document.querySelector('#laraGomez.infoHolder .name');
 const laraGomezPhone = document.querySelector('#laraGomez.infoHolder .phone');
 
-
-
-
-
 //Available Unit page
 const unitDisplayHolder = document.querySelector('#unitDisplayHolder');
 
