@@ -103,9 +103,6 @@ h1 a {
     list-style: none;
 }
 /* Unit list items */
-.unitDisplay {
-    position: relative;
-}
 .petTag {
     position: absolute;
     display: inline-block;
@@ -123,8 +120,15 @@ h1 a {
     border: solid 1px #eee;
     min-height: 150px;
 }
+.dynamicData {
+    color: red;
+}
 .unitImg {
-    
+    width: 100%;
+    position: relative;
+}
+.unitImg img {
+    width: 100%;
 }
 /* Footer */
 footer {
@@ -166,7 +170,14 @@ footer {
     }
 }
 @media screen and (min-width: 700px) {
-    .indexAmenities div {
+    /* .indexAmenities div {
         
+    } */
+    /* Available Units page */
+    .unitDisplay {
+        display: flex;
+    }
+    .unitDisplay:nth-child(even){
+        flex-direction: row-reverse;
     }
 }
