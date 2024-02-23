@@ -216,6 +216,9 @@ h1 a {
     display: flex;
     align-items: center;
 }
+.listItem .infoHolder {
+    font-size: 1.1rem;
+}
 /* Footer */
 footer {
     background-color: #eee;
@@ -278,8 +281,15 @@ footer {
         display: flex;
         align-items: center;
     }
+    .listItem .infoHolder {
+        padding: 0 0 0 50px;
+    }
     .listItem:nth-child(even) {
         flex-direction: row-reverse;
+    }
+    .listItem:nth-child(even) .infoHolder{
+        flex-direction: row-reverse;
+        padding: 0 50px 0 0;
     }
 }
 
