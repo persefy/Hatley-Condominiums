@@ -4,9 +4,9 @@ const navBar = document.querySelector('#navBar');
 
 const sortBtn = document.querySelector('#unitSort');
 const sortBar = document.querySelector('#unitSorting');
+
 const sortByRent = document.querySelector('#sortByRent');
 const sortBySqFt = document.querySelector('#sortBySqFt');
-
 const sortbyBeds = document.querySelector('#sortbyBeds');
 const sortByBaths = document.querySelector('#sortByBaths');
 const sortByParkingCount = document.querySelector('#sortByParkingCount');
@@ -20,8 +20,6 @@ const sortByPetsYesNo = document.querySelector('#sortByYesNo');
 
 //Available Unit page
 const unitDisplayHolder = document.querySelector('#unitDisplayHolder');
-
-
 
 
 //Populate Data
@@ -141,7 +139,7 @@ const populateUnits = async () => {
         newUnitInfo.append(newContactBlurb);
         newUnitInfo.append(newContactBtn)
         newContactBtn.classList.add('btn');
-        newContactBtn.setAttribute('href','../pages/about.html')
+        newContactBtn.setAttribute('href','../pages/contact.html')
 
         } else {
             console.log(`Not displaying unavailable unit # ${unitNumber}`);
@@ -154,8 +152,10 @@ populateUnits()
 
 //Events
 
-navBar.style.display='none';
-sortBar.style.display ='none';
+if (screen.width < 449) { 
+    navBar.style.display='none';
+    sortBar.style.display ='none';
+}
 if (screen.width > 450) {
     navBar.style.display='flex';
     sortBar.style.display ='flex';
@@ -180,3 +180,15 @@ sortBtn.addEventListener('click', () => {
         console.log('error with sort bar toggle!')
     }
 });
+
+console.log(unitDisplayHolder.children)
+//sorting functions for units page
+sortByRent.addEventListener('click', () => { 
+
+});
+
+//sortBySqFt
+// sortbyBeds 
+// sortByBaths
+// sortByParkingCount
+// sortByPetsYesNo

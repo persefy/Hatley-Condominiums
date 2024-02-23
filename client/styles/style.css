@@ -43,14 +43,13 @@ h1 a {
 }
 /* Index page */
 #indexTopBgImg {
-    width: 80%;
-  height: 200px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url('https://static.wixstatic.com/media/11062b_8764c64fe1bf490490b01ea65052e01d~mv2_d_3000_2477_s_4_2.jpg/v1/fill/w_506,h_718,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8764c64fe1bf490490b01ea65052e01d~mv2_d_3000_2477_s_4_2.jpg');
+    max-width: 1000p ;
+}
+#indexTopBgImg img {
+    width: 100%;
+    height: auto;
 }
 .indexAmenities {
-    border: solid 1px #eee;
     padding: 0 2px 20px;
 }
 .indexAmenities div {
@@ -69,7 +68,7 @@ h1 a {
 }
 .callToActionSec a {
     text-decoration: none;
-    background-color: coral;
+    background-color: #166227;
     color: #fff;
     display: inline-block;
     padding: 10px 0;
@@ -226,15 +225,22 @@ footer {
     #unitSorting li:last-child {
         border: none;
     }
+    #indexCTAWrap {
+        display: flex;
+    }
+    #indexCTAWrap aside {
+        width: 50%;
+        background-color: #e5d688;
+    }
 }
 
 @media screen and (min-width: 500px) {
     h1 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-size: 2.5rem;
     }
     #navBar {
-        max-width: 700px;
+        max-width: 1000px;
         margin: 0 auto 20px;
 
     }
@@ -249,13 +255,22 @@ footer {
     }
     #mainSection {
         max-width: 1000px;
+
+    }
+    .indexAmenities h4 {
+        font-size: 1.2rem;
+        color: #166227;
+    }
+    .indexAmenities div {
+        display: flex;
+    }
+    .indexAmenities p {
+        padding: 5px 2px 0 10px;
+        text-align: left;
     }
 }
 @media screen and (min-width: 700px) {
-    /* .indexAmenities div {
-        
-    } */
-    /* Available Units page */
+
     .unitDisplay {
         display: flex;
     }
@@ -263,4 +278,15 @@ footer {
         flex-direction: row-reverse;
     }
     
+}
+@media screen and (min-width: 800px) { 
+    #navBar li {
+        width: 180px;
+        margin: 0 2px;
+    }
+    .indexAmenityHolder {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10px;
+    }
 }
