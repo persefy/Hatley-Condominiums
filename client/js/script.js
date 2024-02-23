@@ -3,7 +3,20 @@ const navBtn = document.querySelector('#navBtn');
 const navBar = document.querySelector('#navBar');
 
 const sortBtn = document.querySelector('#unitSort');
-const sortBar = document.querySelector('#unitSorting')
+const sortBar = document.querySelector('#unitSorting');
+const sortByRent = document.querySelector('#sortByRent');
+const sortBySqFt = document.querySelector('#sortBySqFt');
+
+const sortbyBeds = document.querySelector('#sortbyBeds');
+const sortByBaths = document.querySelector('#sortByBaths');
+const sortByParkingCount = document.querySelector('#sortByParkingCount');
+const sortByPetsYesNo = document.querySelector('#sortByYesNo');
+
+
+
+
+
+
 
 //Available Unit page
 const unitDisplayHolder = document.querySelector('#unitDisplayHolder');
@@ -140,7 +153,14 @@ const populateUnits = async () => {
 populateUnits()
 
 //Events
+
 navBar.style.display='none';
+sortBar.style.display ='none';
+if (screen.width > 450) {
+    navBar.style.display='flex';
+    sortBar.style.display ='flex';
+    console.log('greater than 450px');
+}
 navBtn.addEventListener('click', () => {
     if (navBar.style.display == 'none') {
         navBar.style.display = 'block';
@@ -151,7 +171,6 @@ navBtn.addEventListener('click', () => {
     }
 });
 
-sortBar.style.display ='none';
 sortBtn.addEventListener('click', () => {
     if (sortBar.style.display == 'none') {
         sortBar.style.display = 'block';

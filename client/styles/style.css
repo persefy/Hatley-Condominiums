@@ -16,6 +16,7 @@ h1 a {
 /* Nav bar styling */
 #navBar {
     padding:0;
+    display: none;
 }
 #navBar li {
     list-style: none;
@@ -216,6 +217,7 @@ footer {
     }
     #unitSorting {
         border: solid 1px #6390f3;
+        display: none;
     }
     #unitSorting li {
         border-right: solid 1px #6390f3;
