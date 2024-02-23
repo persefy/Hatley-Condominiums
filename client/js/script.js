@@ -38,12 +38,14 @@ const populateUnits = async () => {
         let unitDescription = response.data[i].description;
         let unitAvailable = response.data[i].available;
         let unitAcceptsPets = response.data[i].acceptsPets;
+        let unitImgLink = response.data[i].unitImg;
 
         //define Div's to be created
         let newUnitDisplayDiv = document.createElement("div"); //unit container
+
         let newUnitImgDiv = document.createElement("div"); //unit img div container
         let newPetTag = document.createElement("div"); //unit img pet tag div
-        let newUnitImg = document.createElement("div"); //unit img tag
+        let newUnitImg = document.createElement("img"); //unit img tag
         
         let newUnitInfo = document.createElement("div"); //unit info div container
         let newUnitRent = document.createElement("div"); //unit rent amount div
@@ -68,8 +70,12 @@ const populateUnits = async () => {
         let newPetPolicy = document.createElement("div"); //Pet policy
         let newContactBlurb = document.createElement("div"); //contact text
 
-    
+        console.log(unitImgLink)
+        
         //Add Content
+        newPetTag.innerHTML = 'Pet Friendly';
+        newUnitImg.setAttribute('src',`${unitImgLink}`);
+
         newUnitRent.innerHTML = `&dollar;${unitRent}&#47;mo`;
         newUnitStyle.innerHTML = `${unitStyleName}`;
         newUnitBeds.innerHTML = `${unitBeds}bd`;
@@ -85,7 +91,15 @@ const populateUnits = async () => {
 
 
         //Add to DOM
+        unitDisplayHolder.append(newUnitImgDiv);
+
+        newUnitImgDiv.append(newPetTag);
+        newPetTag.classList.add('petTag');
+        newUnitImgDiv.append(newUnitImg);
+        
+
         unitDisplayHolder.append(newUnitDisplayDiv);
+        
         newUnitDisplayDiv.append(newUnitRent);
         newUnitDisplayDiv.classList.add('unitDisplay');
         newUnitDisplayDiv.append(newUnitStyle);
