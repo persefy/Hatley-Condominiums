@@ -73,6 +73,7 @@ h1 a {
 .unitDisplay {
     border: solid 1px #ddd;
     margin: 5px 0;
+    color: #343a47;
 }
 #unitSort, #unitFilter {
     background-color: #fff;
@@ -180,4 +181,5 @@ footer {
     .unitDisplay:nth-child(even){
         flex-direction: row-reverse;
     }
+    
 }
